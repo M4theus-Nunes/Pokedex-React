@@ -8,7 +8,7 @@ const PaginaBase = ({ children }) => {
       <header className={styles.headerContainer}>
         <img src={Logo} alt="logo" className={styles.logo} />
       </header>
-      <main>{children}</main>
+      <main className={styles.mainContainer}>{children}</main>
     </>
   );
 };

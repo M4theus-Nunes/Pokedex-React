@@ -14,6 +14,7 @@ export const fetchPokemon = async (url) => {
   }
 };
 
+
 export const fetchPokedex = async () => {
   try {
     const response = await fetch(

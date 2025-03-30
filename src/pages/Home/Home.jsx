@@ -8,7 +8,6 @@ import PokeCard from "../../components/PokeCard/PokeCard.jsx";
 
 const Home = () => {
   const [pokedex, setPokedex] = useState([]);
-  console.log(pokedex);
 
   useEffect(() => {
     fetchPokedex().then((data) => setPokedex(data));
@@ -20,17 +19,10 @@ const Home = () => {
         <div className={styles.pesquisaWrapper}>
           <InputPesquisa />
         </div>
-
-        <h1 style={{ textAlign: "center" }}>Teste</h1>
-        {pokedex.map((item) => (
-          <div key={item.id} style={{display:'flex', alignItems:'center'}}>
-            <h1 key={item.id}>{`id: ${item.id} - nome: ${item.name}`}</h1>
-            <img src={item.sprites.front_default} alt={item.name} />
-          </div>
-        ))}
-
         <h1>Aqui vai ficar os cards</h1>
-        <PokeCard />
+        <div className={styles.cardWrapper}>
+        <PokeCard pokedex={pokedex}/>
+        </div>
       </div>
     </PaginaBase>
   );

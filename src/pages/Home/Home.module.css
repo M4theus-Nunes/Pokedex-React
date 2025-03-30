@@ -1,7 +1,18 @@
 .homeBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pesquisaWrapper {
   display: flex;
+  justify-content: center;
+}
+
+.cardWrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
   justify-content: center;
 }

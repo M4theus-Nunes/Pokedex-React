@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import PaginaBase from "../../layout/PaginaBase/PaginaBase";
 import { InputPesquisa } from "../../components/InputPesquisa/InputPesquisa";
 import styles from "./Home.module.css";
-// import InputPesquisa from  '.Ho'
 import { fetchPokedex } from "../../services/PokeAPI.js";
 import PokeCard from "../../components/PokeCard/PokeCard.jsx";
 

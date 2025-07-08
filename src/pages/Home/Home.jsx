@@ -4,6 +4,7 @@ import { InputPesquisa } from "../../components/InputPesquisa/InputPesquisa";
 import styles from "./Home.module.css";
 import { fetchPokedex } from "../../services/PokeAPI.js";
 import PokeCard from "../../components/PokeCard/PokeCard.jsx";
+import Spinner from "../../components/Spinner/Spinner.jsx";
 
 const Home = () => {
   const [pokedex, setPokedex] = useState([]);
@@ -18,9 +19,9 @@ const Home = () => {
         <div className={styles.pesquisaWrapper}>
           <InputPesquisa />
         </div>
-        <h1>Aqui vai ficar os cards</h1>
+        <Spinner/>
         <div className={styles.cardWrapper}>
-        <PokeCard pokedex={pokedex}/>
+          <PokeCard pokedex={pokedex} />
         </div>
       </div>
     </PaginaBase>

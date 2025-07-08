@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./PaginaBase.module.css";
+import styles from "./PageBase.module.css";
 import Logo from "../../assets/img/logo.png";
 
-const PaginaBase = ({ children }) => {
+const PageBase = ({ children }) => {
   return (
     <>
       <header className={styles.headerContainer}>
@@ -13,4 +13,4 @@ const PaginaBase = ({ children }) => {
   );
 };
 
-export default PaginaBase;
+export default PageBase;

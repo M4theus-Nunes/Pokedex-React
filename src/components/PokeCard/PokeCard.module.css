@@ -14,7 +14,6 @@
 .pokeCard:hover {
   transform: perspective(1000px) rotateY(6deg) rotateX(5deg) scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.421);
-
 }
 
 .pokeId {
@@ -22,7 +21,7 @@
 }
 
 .pokeImgContainer {
-  cursor:pointer;
+  cursor: pointer;
   background-color: #363636;
   width: 100%;
   display: flex;
@@ -30,7 +29,7 @@
   align-items: center;
   padding: 1rem 0;
   border-radius: 1.5rem;
-  background-image: url("../../assets/img/pokebola.png");
+  background-image: url("../../assets/img/pokeball.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,6 +43,7 @@
   font-size: 3em;
   margin: 5px 0;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .pokeTypes {
@@ -52,13 +52,11 @@
   gap: 5px;
 }
 
-.pokeTypes > span {
+.pokeTypes>span {
   font-size: 1.6rem;
   padding: 0 1.5rem;
   border: 3px solid #1f1f20;
   border-radius: 10px;
   padding: 3px 15px;
   text-transform: capitalize;
-  /* font-weight: 400; */
-  /* text-shadow: -1px 1px 1px #1f1f20; */
 }

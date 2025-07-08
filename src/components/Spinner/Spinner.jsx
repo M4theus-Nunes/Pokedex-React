@@ -2,15 +2,15 @@ import React from 'react'
 import styles from './Spinner.module.css'
 
 
-const Spinner = ({tamanho, cor}) => {
+const Spinner = ({size}) => {
     return (
         <div className={styles.spinner}
             style={{
-                height: '80px',
-                width: '80px',
+                height: size ? size : '60px',
+                width: size ? size : '60px',
             }}
         >
-            <svg width="80" height="80" viewBox="0 0 470 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width= {size ? size : '60px'} height={size ? size : '60px'} viewBox="0 0 470 470" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="poke-mask">
                     <rect width="470" height="470" fill="black" />
                     <circle cx="235" cy="235" r="200" fill="white" />

@@ -22,7 +22,7 @@ const Home = () => {
   }, [pokedex])
 
   useEffect(() => {
-    const filterPokemon = pokedex.filter((pokemon) => pokemon.name.includes(search))
+    const filterPokemon = pokedex.filter((pokemon) => pokemon.name.toLowerCase().includes(search.toLowerCase().trim()) || pokemon.id.toString().includes(search.trim()));
     setFilterPodekex(filterPokemon)
   }, [search])
 

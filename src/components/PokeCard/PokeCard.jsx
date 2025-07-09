@@ -27,7 +27,7 @@ const PokeCard = ({ pokedex }) => {
     <>
       {pokedex.map((item) => (
         <div key={item.id} className={styles.pokeCard}>
-          <span className={styles.pokeId}> {item.id < 10 ? `N° 000${item.id}` : item.id >= 10 && item.id < 100 ? `N° 00${item.id}` : item.id >= 100 && item.id < 1000 ? `N° 0${item.id}` : `N° ${item.id}`} </span>
+          <span className={styles.pokeId}> {item.id < 10 ? `#000${item.id}` : item.id >= 10 && item.id < 100 ? `#00${item.id}` : item.id >= 100 && item.id < 1000 ? `#0${item.id}` : `#${item.id}`} </span>
 
           <div className={styles.pokeImgContainer}>
             <img
